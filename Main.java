@@ -1,6 +1,7 @@
 import geometry.point;
 import geometry.circle;
 import geometry.ColoredCircle;
+import geometry.Rectangle;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,10 +31,19 @@ public class Main {
             if (c instanceof ColoredCircle) {
                 String color = ((ColoredCircle) c).getColor();
                 System.out.println("Kolor koła: " + color);
-   
-   
-   
+            }
+        }
+
+        Rectangle rectangle = new Rectangle(5.0, 10.0);
+
+        System.out.println("Właściwości prostokąta:");
+        System.out.println("Długość: " + rectangle.getLength());
+        System.out.println("Szerokość: " + rectangle.getWidth());
+        System.out.println("Pole prostokąta: " + rectangle.calculateArea());
+        System.out.println("Obwód prostokąta: " + rectangle.calculatePerimeter());
+    
+    
     }
-}
+
     }
-}
+
