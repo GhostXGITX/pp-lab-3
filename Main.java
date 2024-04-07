@@ -18,5 +18,22 @@ public class Main {
         System.out.println("Obwód koła: " + circle.calculatePerimeter());
         System.out.println("Pole powierzchni koła: " + circle.getArea());
         System.out.println("Kolor koła: " + coloredCircle.getColor());
+   
+        circle[] circles = new circle[2];
+        circles[0] = circle;
+        circles[1] = coloredCircle;
+
+        for (circle c : circles) {
+            double area = c.getArea();
+            System.out.println("Pole powierzchni koła: " + area);
+
+            if (c instanceof ColoredCircle) {
+                String color = ((ColoredCircle) c).getColor();
+                System.out.println("Kolor koła: " + color);
+   
+   
+   
+    }
+}
     }
 }
