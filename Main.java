@@ -2,6 +2,7 @@ import geometry.point;
 import geometry.circle;
 import geometry.ColoredCircle;
 import geometry.Rectangle;
+import geometry.Square;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,7 +42,14 @@ public class Main {
         System.out.println("Szerokość: " + rectangle.getWidth());
         System.out.println("Pole prostokąta: " + rectangle.calculateArea());
         System.out.println("Obwód prostokąta: " + rectangle.calculatePerimeter());
-    
+        
+        Square square = new Square(5.0);
+
+        System.out.println("Właściwości kwadratu:");
+        System.out.println("Długość boku: " + square.getLength());
+        System.out.println("Pole kwadratu: " + square.calculateArea());
+        System.out.println("Obwód kwadratu: " + square.calculatePerimeter());
+        
     
     }
 
